@@ -1,0 +1,2 @@
+import{r as t}from"./index-DY4Ks39X.js";const u=e=>t.get({url:"/vadmin/auth/menus",params:e}),s=e=>t.delete({url:"/vadmin/auth/menus",data:e}),r=e=>t.post({url:"/vadmin/auth/menus",data:e}),i=e=>t.put({url:`/vadmin/auth/menus/${e.id}`,data:e}),a=()=>t.get({url:"/vadmin/auth/menus/tree/options"}),o=()=>t.get({url:"/vadmin/auth/menus/role/tree/options"});export{r as a,a as b,o as c,s as d,u as g,i as p};
+//# sourceMappingURL=menu-CbYmW6R2.js.map
