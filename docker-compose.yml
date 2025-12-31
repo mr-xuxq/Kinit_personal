@@ -16,6 +16,10 @@ services:
       - ./kinit-api:/app
     networks:
       - kinit_network  # 简化网络配置，使用服务名通信
+    depends_on:
+      - kinit-mysql
+      - kinit-redis
+      - kinit-mongo
 
   kinit-admin:
     container_name: kinit-admin
@@ -44,6 +48,9 @@ services:
       - ./kinit-task:/app
     networks:
       - kinit_network
+    depends_on:
+      - kinit-redis
+      - kinit-mongo
 
   kinit-redis:
     container_name: kinit-redis
